@@ -19,7 +19,9 @@ try
 
     builder.Host
         .UseSerilog((context, configuration)
-            => configuration.ReadFrom.Configuration(context.Configuration));
+            => configuration
+                .ReadFrom.Configuration(context.Configuration)
+                .Enrich.WithEnvironmentName());
 
     var app = builder.Build();
 

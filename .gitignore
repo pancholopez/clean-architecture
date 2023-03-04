@@ -348,3 +348,11 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# JetBrains Raider local user settings
+.idea/
+
+# SqLite DB and auto-generated temp files
+*.db
+*.db-shm
+*.db-wal
